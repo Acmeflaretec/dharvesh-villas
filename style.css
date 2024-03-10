@@ -412,7 +412,7 @@ li.social-links a {
   overflow: hidden;
   position: relative;
   background-position: center center;
-  vertical-align: sub;
+
   width: 100%;
   z-index: 2;
 }
@@ -1896,8 +1896,7 @@ select.mobile-device {
   float: right;
   width: 50%;
 }
-.text-app:hover {
-}
+
 .app_version .section-title h3 {
   font-size: 30px;
   font-weight: 500;

@@ -25,6 +25,54 @@
    <link rel="stylesheet" href="css/responsive.css">
    <!-- building CSS -->
    <link rel="stylesheet" href="css/building.css">
+
+
+   <style>
+      /* Styles for the villa section */
+/* Styles for the villa section */
+#villa-types {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Styles for the message box */
+.message-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styles for the villa types */
+.villa-type {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.villa-type h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.villa-type p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Ensure equal width for villa type boxes */
+@media (min-width: 768px) {
+    .villa-type {
+        height: 280px; /* Adjust height as needed */
+    }
+}
+
+   </style>
    </head>
    <body class="building_version" data-spy="scroll" data-target=".header">
       <!-- LOADER -->
@@ -83,16 +131,16 @@
             </div>
          </nav>
       </header>
-      <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('uploads/building/slide-img1.png');">
+      <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('./images/banner/1.jpeg');height: 100vh; ; ">
          <div class="container">
             <div class="row">
                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center">
                   <div class="big-tagline">
-                     <img class="border-line-img" src="uploads/building/sep-line-white.png" alt="" />
-                     <h2><span class="yellow">Building </span></h2>
-                     <img style="margin-bottom:40px;" class="border-line-img" src="uploads/building/sep-line-white.png" alt="" />
-                     <p class="lead">We turn your dreams into homes with care and precision, crafting spaces that reflect your vision and promise comfort and joy.</p>
-                     <a data-scroll href="#services" class="btn btn-light btn-radius btn-brd">View all Services</a>
+                     <!-- <img class="border-line-img" src="uploads/building/sep-line-white.png" alt="" /> -->
+                     <h2 ><span class="yellow">Buiild Your dream Home!</span></h2>
+                     <!-- <img style="margin-bottom:40px;" class="border-line-img" src="uploads/building/sep-line-white.png" alt="" /> -->
+                     <p style="text-align:center;font-family: monospace;" class="lead">We turn your dreams into homes with care and precision, crafting spaces that reflect your vision and promise comfort and joy.</p>
+                     <a data-scroll href="#about" class="btn btn-light btn-radius btn-brd">Villas starting from 12 lakhs</a>
                   </div>
                </div>
             </div>
@@ -105,19 +153,25 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  
                   <div class="message-box">
                      <h2>About Us</h2>
-                     <h5>WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
+                     <h5 style="font-size: medium; font-weight:bolder;">WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
+                     <img style="width: 100%; margin-top: -25%;" src="./images/logo.png" alt="">
+
+                    
                   </div>
                   <!-- end messagebox -->
                </div>
                <!-- end col -->
                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                   <div class="message-box">
-                     <p class="lead">
-                        Dharvesh Builders and Developers is dedicated to creating exceptional living spaces tailored to our clients'
-                         desires. With a focus on quality craftsmanship and personalized service, we turn dreams into reality, crafting 
-                         homes that inspire and delight, exceeding expectations every step of the way.
+                     <p style="color: black; font-weight: 300; text-align: justify;" class="lead">
+                        For over 15 years, Dharvesh Builders and Developers has been a cornerstone of the construction industry in Manjeri, Kerala. With a wealth of experience spanning more than a decade and a half, our team has honed its skills to perfection, establishing a reputation for excellence in every project we undertake. Our commitment to quality craftsmanship, innovative design, and personalized service has set us apart as a trusted name in the region.
+
+At Dharvesh, we believe in going above and beyond to exceed the expectations of our clients. From the initial consultation to the final touches, we work closely with our clients to understand their vision and bring it to life. Our dedication to customer satisfaction is evident in every aspect of our work, from the meticulous attention to detail to the use of premium materials and finishes.
+
+Over the years, we have had the privilege of crafting countless exceptional living spaces that inspire and delight. Whether it's a luxurious villa, a stylish apartment, or a contemporary office complex, our team is committed to delivering results that stand the test of time. As we look to the future, we remain steadfast in our mission to continue creating exceptional living experiences that exceed the expectations of our clients and enrich the communities we serve.
                         </p>
                      <a href="#" class="read-more">Read More</a>
                   </div>
@@ -127,16 +181,16 @@
             </div>
             <!-- end row -->
             <div class="row text-center about-row">
-               <div class="col-md-4 col-sm-12 col-xs-12">
+               <div  class="col-md-4 col-sm-12 col-xs-12">
                   <div class="row">
                      <div class="service-widget">
                         <div class="post-media wow fadeIn">
                            <!-- <a href="uploads/building_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a> -->
-                           <img src="uploads/building_01.jpg" alt="" class="img-responsive img-rounded">
+                           <img src="images/point1.png" alt="" class="img-responsive img-rounded">
                         </div>
-                        <h3>Bespoke Living Solutions</h3>
-                        <p>Explore our tailored living spaces, meticulously designed to meet the unique needs and desires of every homeowner, ensuring a personalized touch in every corner.
-                        </p>
+                        <h3 style="font-weight: 900;">Low Price - High Quality</h3>
+                        <p style="text-align:center;">We prioritize offering high-quality construction services at competitive prices, ensuring affordability without compromising on the quality of our work.</p>
+                     </p>
                      </div>
                      <!-- end service -->
                   </div>
@@ -146,12 +200,12 @@
                      <div class="service-widget">
                         <div class="post-media wow fadeIn">
                            <!-- <a href="uploads/building_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a> -->
-                           <img src="uploads/building_02.jpg" alt="" class="img-responsive img-rounded">
+                           <img src="images/point2.png" alt="" class="img-responsive img-rounded">
                         </div>
-                        <h3>Elevated Residential Experiences</h3>
-                        <p>Elevate your lifestyle with our curated amenities, including bespoke garden landscapes and communal spaces, crafted to enhance the quality of life for our residents.
-                            </p>
-                     </div>
+                        <h3 style="font-weight: 900;">Lifetime Warranty</h3>
+                        <p style="text-align: center;">Our commitment to excellence is backed by a lifetime warranty on our constructions, providing peace of mind to our clients.</p>
+                     </p>
+                     </div> 
                      <!-- end service -->
                   </div>
                </div>
@@ -160,11 +214,12 @@
                      <div class="service-widget">
                         <div class="post-media wow fadeIn">
                            <!-- <a href="uploads/building_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a> -->
-                           <img src="uploads/building_03.jpg" alt="" class="img-responsive img-rounded">
+                           <img src="images/point3.png" alt="" class="img-responsive img-rounded">
                         </div>
-                        <h3>Custom-Built Dream Homes</h3>
-                        <p>Experience the difference with our personalized approach to homebuilding, where every detail is thoughtfully considered to create a space that truly reflects your lifestyle and aspirations.
-                           </p>
+                        <h3 style="font-weight: 900;" >24/7 Support</h3>
+                        <p>
+                           "Our commitment extends to providing continuous support, available 24/7,  ensuring a smooth and hassle-free journey throughout their project."</p>
+                     </p>
                      </div>
                      <!-- end service -->
                   </div>
@@ -176,76 +231,102 @@
          <div class="sep1"></div>
       </div>
       <!-- end section -->
-      <div id="services" class="parallax section db parallax-off no-padding-bottom"  >
+      <div id="services" class="parallax section db parallax-off no-padding-bottom">
          <div class="container">
-            <div class="row">
-               <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-                  <div class="message-box">
-                     <h2>Services</h2>
-                     <h5>WE ARE THE LEADERS IN THE CONSTRUCTION INDUSTRY!</h5>
-                  </div>
-                  <!-- end messagebox -->
-               </div>
-               <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                  <div class="row">
-                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="service-inform">
-                           <div class="icon-service">
-                              <img src="images/icon1.png" alt="#" />
-                           </div>
-                           <div class="service-inform-text">
-                              <h3> Custom Home Design</h3>
-                              <p>Tailored architectural solutions to bring your dream home to life, reflecting your unique style and preferences.</p>
-                           </div>
-                        </div>
+             <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                     <div class="message-box">
+                         <h1 style="align-items: center;justify-content: center;font-size: 70px; font-weight: 600;">Services</h1>
+                         <h5 >Building your vision!</h5>
                      </div>
-                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="service-inform">
-                           <div class="icon-service">
-                              <img src="images/icon4.png" alt="#" />
-                           </div>
-                           <div class="service-inform-text">
-                              <h3> Renovation & Remodeling</h3>
-                              <p>Transform your space with expert renovation and remodeling services, enhancing functionality and aesthetics to suit your evolving needs.
+                     <!-- end messagebox -->
+                 </div>
+                 
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="row service-inform">
+                      <div class="col-lg-4 col-md-5 col-sm-12">
+                          <img src="./images/Villas.png" alt="" style="width:100%;">
+                      </div>
+                      <div class="col-lg-8 col-md-7 col-sm-12">
+                          <div class="service-inform-text">
+                              <h1 style="text-align: left;font-weight: 600;">Building Villas</h1>
+                              <p style="text-align: justify;">Dharvesh Developers stands at the forefront of luxury real estate with its bespoke villa construction service. Their projects are more than just homes; they are curated experiences tailored to the highest standards of living. With a keen eye for modern architectural trends and a deep understanding of timeless design principles, Dharvesh Developers crafts exclusive residences that are as unique as their owners. From the initial concept to the final touches, every villa is a masterpiece of design and craftsmanship.
 
-
-                              </p>
-                           </div>
-                        </div>
-                     </div>
+                                 The company’s approach involves a meticulous selection of premium materials, ensuring durability, aesthetic appeal, and environmental sustainability. Innovative design techniques are employed to create spaces that are both functional and beautiful, with attention to natural light, spatial dynamics, and seamless indoor-outdoor living. Client-specific amenities such as custom home theatres, state-of-the-art kitchens, and integrated smart home technologies are just a few examples of the personalized features that can be incorporated.
+                                 
+                          </div>
+                      </div>
                   </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div class="row service-inform">
+                   <div class="col-lg-4 col-md-5 col-sm-12">
+                       <img src="./images/service2.png" alt="" style="width:100%;">
+                   </div>
+                   <div class="col-lg-8 col-md-7 col-sm-12">
+                       <div class="service-inform-text">
+                        <h1 style="text-align: left;font-weight: 600;">Selling Lands</h1>
+                        <p style="text-align: justify;">Navigating the complexities of land acquisition requires expertise and insight, qualities that Dharvesh Developers brings to the table with its land sale services. Specializing in prime parcels of land that offer vast potential for various development projects, the company acts as a bridge between the untouched land and visionary developers or homeowners. With an extensive portfolio that includes residential, commercial, and mixed-use plots, Dharvesh Developers provides a foundation upon which dreams can be built.
+
+                              Their service goes beyond mere transactions. It encompasses a comprehensive consultancy approach, guiding clients through each step of the process. From understanding the intricacies of zoning laws and regulatory requirements to assessing the future development potential of the area, the company ensures that buyers are well-informed. This support is crucial in making strategic decisions that align with long-term investment goals or specific development visions.
+                       </div>
+                   </div>
                </div>
+           </div>
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row service-inform">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <img src="./images/service 3.png" alt="" style="width:100%;">
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12">
+                    <div class="service-inform-text">
+                     <h1 style="text-align: left;font-weight: 600;">Construction Works</h1>
+                     <p style="text-align: justify;">Dharvesh Developers’ comprehensive construction services cover the full spectrum of the building process, from conceptual design to project completion. Catering to residential, commercial, and industrial sectors, the company excels in transforming visions into tangible structures that stand the test of time. Their projects reflect a commitment to quality, safety, and sustainability, setting new standards in the construction industry.
+
+                        With a team comprising skilled architects, engineers, and construction professionals, Dharvesh Developers ensures that each project is executed with precision and excellence. Utilizing the latest technologies and construction methodologies, they strive for efficiency in all aspects of their work, from material selection to waste management. This not only ensures timely delivery of projects but also optimizes costs, providing clients with value without compromising on quality.
+                        
+                        Safety is paramount in all of Dharvesh Developers' endeavors. Rigorous safety protocols are implemented to protect workers and the environment, reflecting the company's responsibility towards its employees and the community. Moreover, sustainability practices are integrated into every project, aiming for green building certifications and minimizing environmental impact.
+                    </div>
+                </div>
             </div>
+        </div>
+                        
+                     </div>
+                 </div>
+             </div>
          </div>
+     </div>
+     
+     
          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
-               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 serv" style="background-color:#222;">
+               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 serv" style="background-color:#e8a900;">
                   <div class="serv-blog">
                      <img src="images/sr1.png" alt="#" />
                   </div>
                   <div class="serv-blog-cont">
                      <h3>Manufacturing</h3>
-                     <p>
+                     <p style="color: black; text-align: center;">
                         Precision manufacturing for various industries, ensuring top-quality components with cutting-edge technology and skilled craftsmanship.                     </p>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#181818;">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv"style="background-color:#e8a900;">
                   <div class="serv-blog">
                      <img src="images/sr2.png" alt="#" />
                   </div>
                   <div class="serv-blog-cont">
                      <h3>Fabrication</h3>
-                     <p>
+                     <p style="color: black; text-align: center;">
                         Custom fabrication solutions tailored to diverse needs, delivering innovative products with meticulous attention to detail and unmatched craftsmanship.                     </p>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background:#222;">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 serv" style="background-color:#e8a900;">
                   <div class="serv-blog">
                      <img src="images/sr3.png" alt="#" />
                   </div>
                   <div class="serv-blog-cont">
                      <h3>Construction</h3>
-                     <p>
+                     <p style="color: black; text-align: center;">
                         Industry-leading expertise in residential, commercial, and industrial construction, prioritizing quality, safety, and client satisfaction from start to finish.                     </p>
                   </div>
                </div>
@@ -253,80 +334,80 @@
          </div>
       </div>
       <!-- end section -->
-      <div id="projects" class="section">
-         <div class="container" style="display: flex;flex-direction: column;
-         gap: 35px;">
-            <div class="row">
-               <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                  <div class="message-box">
-                     <h2>Company values</h2>
-                     <h5>Contrary to popular belief, Lorem Ipsum is not simply random text.</h5>
-                  </div>
-                  <!-- end messagebox -->
-               </div>
-               
-            </div>
-<div class="row">
-   <div class="col-lg-6 col-md-12">
-      <img   class="img-hcv"  src="/images/port-img2.png"  />
-      
-                     </div>
-                    <div class="col-lg-6 col-md-12">
-                     <h2 class="heading-hvc">Building Dreams, Crafting Homes</h2>
-                     <p>
-                        At Dharvesh Builders and Developers, we take immense pride in our ability to transform dreams into reality by meticulously crafting homes that embody the unique visions of each client. With a dedicated team of skilled professionals and an unwavering commitment to excellence, we ensure that every aspect of the home-building process is executed with precision and care. From the initial design concept to the final touches, we work closely with our clients to create spaces that not only meet their expectations but exceed them, resulting in homes that are not just structures, but reflections of the memories, dreams, and aspirations of those who inhabit them.
-                                    </p>
-      
-      
-      
-                    </div>
-</div>
-<div class="row">
-   <div class="col-lg-6 col-md-12">
-      <img   class="img-hcv"  src="/images/port-img2.png"  />
-      
-                     </div>
-                    <div class="col-lg-6 col-md-12">
-                     <h2 class="heading-hvc">Customizable Homes</h2>
-                     <p>
-                        At Dharvesh Builders and Developers, we understand that every homeowner has unique preferences and requirements. That's why we offer a range of customizable options to tailor your home to your exact specifications. From floor plans and layout configurations to finishes and fixtures, you have the freedom to personalize every aspect of your home, ensuring that it perfectly reflects your style and needs. Our team of experienced professionals will work closely with you to bring your vision to life, providing guidance and expertise every step of the way. With our customizable options, you can create a home that is truly one-of-a-kind and perfectly suited to your lifestyle.
-                                                         </p>
-      
-      
-      
-                    </div>
-</div>
-
-<div class="row">
-   <div class="col-lg-6 col-md-12">
-      <img   class="img-hcv"  src="/images/port-img2.png"  />
-      
-                     </div>
-                    <div class="col-lg-6 col-md-12">
-                     <h2 class="heading-hvc">Quality</h2>
-                     <p>
-                        Quality is not just a goal, but a fundamental principle that underpins everything we do at Dharvesh Builders and Developers. From the moment we conceptualize a project to the final stages of construction, we are unwavering in our pursuit of excellence, ensuring that every home we build is a testament to our commitment to quality craftsmanship and superior materials. Our dedication to quality extends beyond the physical aspects of construction to encompass every aspect of the client experience, from personalized service to attention to detail. We believe that quality is not just a measure of our work, but a reflection of our values and our unwavering commitment to exceeding the expectations of our clients.
-                                                         </p>
-                    </div>
-</div>
-<div class="row">
-   <div class="col-lg-6 col-md-12">
-      <img   class="img-hcv"  src="/images/port-img2.png"  />
-      
-                     </div>
-                    <div class="col-lg-6 col-md-12">
-                     <h2 class="heading-hvc">Integrity</h2>
-                     <p>
-                        Integrity lies at the heart of everything we do at Dharvesh Builders and Developers. It is the guiding principle that shapes our decisions, actions, and relationships, both within our organization and with our clients and partners. We believe in conducting our business with honesty, transparency, and fairness, ensuring that every interaction is characterized by integrity and trustworthiness. From our adherence to ethical business practices to our commitment to delivering on our promises, we strive to uphold the highest standards of integrity in all aspects of our operations, knowing that our reputation and the trust of our clients are our most valuable assets.                                    
-                     </p>
-                    </div>
-</div>
-
-
-         </div>
-      </div>
-      <!-- end section -->
      
+      <div id="villa-types" class="section">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="message-box">
+                         <h2>Discover Our Villas</h2>
+                         <p>Explore our range of villas starting from just 12 lakhs. Each villa is meticulously designed to suit various lifestyles and budgets.</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-lg-4 col-md-6">
+                     <div class="villa-type">
+                         <h3>Basic Villa</h3>
+                         <p>Starting from 12 lakhs</p>
+                         <p>Simple yet functional designs</p>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                     <div class="villa-type">
+                         <h3>Standard Villa</h3>
+                         <p>Starting from 18 lakhs</p>
+                         <p>Modern amenities and stylish finishes</p>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                     <div class="villa-type">
+                         <h3>Premium Villa</h3>
+                         <p>Starting from 25 lakhs</p>
+                         <p>Luxurious living with exquisite craftsmanship</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div id="villa-types" class="section">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="message-box">
+                      <h2>Discover Our Villas</h2>
+                      <p>Explore our range of villas starting from just 12 lakhs. Each villa is meticulously designed to suit various lifestyles and budgets.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-6">
+                  <div class="villa-type">
+                      <h3>Basic Villa</h3>
+                      <p>Starting from 12 lakhs</p>
+                      <p>Simple yet functional designs</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="villa-type">
+                      <h3>Standard Villa</h3>
+                      <p>Starting from 18 lakhs</p>
+                      <p>Modern amenities and stylish finishes</p>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="villa-type">
+                      <h3>Premium Villa</h3>
+                      <p>Starting from 25 lakhs</p>
+                      <p>Luxurious living with exquisite craftsmanship</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+     
+   
       <!-- end section -->
      
       <div id="contact" class="section wb">
