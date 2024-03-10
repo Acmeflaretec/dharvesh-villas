@@ -39,11 +39,15 @@
 .message-box {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 /* Styles for the villa types */
 .villa-type {
-    background-color: #fff;
+   background-image: linear-gradient(13deg, #c18c1a 0%, #f7c41d 50%, #f6b21c 100%);
+   transition: background-image 0.8s ease;
+   transition: transform 0.3s ease;
+
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -53,16 +57,21 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.villa-type:hover{
+   background-image: linear-gradient(135deg, #f7c41d 0%, #f6b21c 50%, #c18c1a 100%);
+   transform: scale(1.1);
+
+}
 
 .villa-type h3 {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .villa-type p {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 /* Ensure equal width for villa type boxes */
@@ -122,7 +131,7 @@
                      <li class="active"><a data-scroll href="#home">Home</a></li>
                      <li><a data-scroll href="#about">About Us <span class="hidden-xs">*</span></a></li>
                      <li><a data-scroll href="#services">Services</a></li>
-                     <li><a data-scroll href="#projects">Company values</a></li>
+                     <li><a data-scroll href="#villa-types">Projects</a></li>
                   
                    
                      <li><a data-scroll href="#contact">Contact Us</a></li>
@@ -348,25 +357,27 @@ Over the years, we have had the privilege of crafting countless exceptional livi
                  </div>
              </div>
              <div class="row">
-                 <div class="col-lg-4 col-md-6">
-                     <div class="villa-type">
-                         <h3>Basic Villa</h3>
-                         <p>Starting from 12 lakhs</p>
-                         <p>Simple yet functional designs</p>
+                 <div  class="col-lg-4 col-md-6">
+                     <div class="villa-type" >
+                         <h3 style="font-weight: 900; ">BASIC VILLA</h3>
+                         <p>Starting from <span style="font-size: 40px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace;">12 lakhs
+
+                         </span> </p>
+                         <p>Simple yet functional designs!</p>
                      </div>
                  </div>
                  <div class="col-lg-4 col-md-6">
                      <div class="villa-type">
-                         <h3>Standard Villa</h3>
-                         <p>Starting from 18 lakhs</p>
-                         <p>Modern amenities and stylish finishes</p>
+                         <h3 style="font-weight: 900;" >STANDARD VILLA</h3>
+                         <p>Starting from <span style="font-size: 40px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace;">18 lakhs
+                           <p>Modern amenities and stylish finishes</p>
                      </div>
                  </div>
                  <div class="col-lg-4 col-md-6">
                      <div class="villa-type">
-                         <h3>Premium Villa</h3>
-                         <p>Starting from 25 lakhs</p>
-                         <p>Luxurious living with exquisite craftsmanship</p>
+                         <h3 style="font-weight: 900;" >PREMIUM VILLA</h3>
+                         <p>Starting from <span style="font-size: 40px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Courier, monospace;">25 lakhs
+                           <p>Luxurious living with exquisite craftsmanship</p>
                      </div>
                  </div>
              </div>
@@ -454,7 +465,7 @@ Over the years, we have had the privilege of crafting countless exceptional livi
                         <li><a data-scroll="" href="#home">Home</a></li>
                         <li><a data-scroll="" href="#about">About Us</a></li>
                         <li><a data-scroll="" href="#services">Services</a></li>
-                        <li><a data-scroll="" href="#projects">Company values</a></li>
+                        <li><a data-scroll="" href="#villa-types">Projects</a></li>
                        
                         <li><a data-scroll="" href="#contact">Contact Us</a></li>
 					 </ul>
@@ -498,6 +509,23 @@ Over the years, we have had the privilege of crafting countless exceptional livi
                  
          </div>
       </footer>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             var navbarLinks = document.querySelectorAll('.navbar-nav li a[data-scroll]');
+             navbarLinks.forEach(function(link) {
+                 link.addEventListener('click', function() {
+                     var navbarToggle = document.querySelector('.navbar-toggle');
+                     var navbarCollapse = document.querySelector('#navbar');
+         
+                     // Close the navbar
+                     if (navbarToggle && navbarCollapse) {
+                         navbarToggle.classList.add('collapsed');
+                         navbarCollapse.classList.remove('in');
+                     }
+                 });
+             });
+         });
+         </script>
       <!-- end footer -->
       <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
